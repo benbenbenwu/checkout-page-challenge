@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
@@ -13,7 +15,111 @@
 </head>
 
 <body>
+  <header class="header">
+    <h1 class="heading-primary">Checkout</h1>
+  </header>
+  <main class="main">
+    <form class="checkout-box">
+      <div class="checkout-box-1">
+        <h2 class="heading-secondary">Contact infomation</h2>
+        <div class="contact-mess-box">
+          <span class="material-symbols-outlined icon">mail</span>
+          <label for="email" class="label-text">E-mail</label>
+          <input type="text" id="email" placeholder="Enter your email..." class="input">
+        </div>
+        <div class="contact-mess-box">
+          <span class="material-symbols-outlined icon">call</span>
+          <label for="phone" class="label-text">Phone</label>
+          <input type="number" id="phone" placeholder="Enter your phone..." class="input">
+        </div>
+      </div>
+      <div class="checkout-box-2">
+        <h2 class="heading-secondary">Shipping address</h2>
+        <div class="contact-mess-box">
+          <span class="material-symbols-outlined icon">person</span>
+          <label for="name" class="label-text">Full name</label>
+          <input type="text" id="name" placeholder="Rodney Cotton" class="input">
+        </div>
+        <div class="contact-mess-box">
+          <span class="material-symbols-outlined icon">home</span>
+          <label for="address" class="label-text">Address</label>
+          <input type="text" id="address" placeholder="Your Address..." class="input">
+        </div>
+        <div class="contact-mess-box">
+          <span class="material-symbols-outlined icon">apartment</span>
+          <label for="city" class="label-text">City</label>
+          <input type="text" id="city" placeholder="Your City..." class="input">
+        </div>
+        <div class="special-box">
+          <div class="contact-mess-smaller-box">
+            <span class=" material-symbols-outlined icon">public</span>
+            <label for="country" class="label-text">Country</label>
+            <select id="country" class="input">
+              <option>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Your country..</option>
+            </select>
+          </div>
+          <div class="contact-mess-smaller-box">
+            <span class="material-symbols-outlined icon">book</span>
+            <label for="code" class="label-text">Postal code</label>
+            <input type="text" id="code" placeholder="Your Postal code..." class="input">
+          </div>
+        </div>
 
+      </div>
+      <div class="checkout-box-3">
+        <input type="checkbox" id="checkmess">
+        <label for="checkmess" class="checkmess">Save this information for next time</label>
+      </div>
+      <div class="btn-box">
+        <button class="btn">Continue</button>
+      </div>
+    </form>
+    </div>
+    <div class="good-box">
+      <div class="good-detail-box">
+        <div class="good-detail">
+          <div class="good-img">
+            <img src="photo1.png" alt="photo" class="good-img">
+          </div>
+          <div class="good-total">
+            <p class="good-name">Vintage Backbag</p>
+            <div class="price-total">
+              <span class="dis-price">$54.99</span>
+              <span class="pre-price">$94.99</span>
+            </div>
+            <div class="good-num-box">
+              <div class="good-num">1</div>
+            </div>
+          </div>
+        </div>
+        <div class="good-detail">
+          <div class="good-img">
+            <img src="photo2.png" alt="photo" class="good-img">
+          </div>
+          <div class="good-total">
+            <p class="good-name">Levi Shoes</p>
+            <div class="price-total">
+              <span class="dis-price">$74.99</span>
+              <span class="pre-price">$124.99</span>
+            </div>
+            <div class="good-num-box">
+              <div class="good-num">1</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="price-shipping-box">
+          <span>shipping</span><span>$19</span>
+        </div>
+        <div class="price-count-box">
+          <span>Total</span><span>$148.98</span>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <p class="footer-text">created by <a href="https://github.com/benbenbenwu/404-page-challenge">@benbenbenwu</a></p>
+  </footer>
 </body>
 
 </html>
